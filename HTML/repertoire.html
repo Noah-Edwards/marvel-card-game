@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Repertoire des cartes</title>
+        <link rel="shortcut icon" type="image/png" href="../Images/Autres/Marvel.png">
+
+        <!-- Insertion de jQuery -->
+        <script src="../jQuery/jquery-3.4.1.min.js"></script>
+        <!-- Insertion de mon css -->
+        <link href="../Bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <!-- Insertion de Bootstrap -->
+        <link href="../CSS/repertoire.css" rel="stylesheet">
+        <!-- Insertion de FontAwesome pour les icônes -->
+        <link href="../Icônes FontAwesome/css/all.css" rel="stylesheet">
+        <script defer src="../Icônes FontAwesome/js/all.js"></script>
+    </head>
+    <body>
+        <!-- Barre de recherche -->
+        <div class="searchBox">
+            <input id="motRecherche" class="searchInput" type="text" name="" placeholder="Search">
+            <button class="searchButton" href="#">
+                <i class="fas fa-search"></i>
+            </button>
+        </div>
+        
+        <!-- Tableau contenant toutes les cartes s-->
+        <table>
+            <!-- En-tete du tableau -->
+            <thead>
+                <tr>
+                    <th>N°</th>
+                    <th>NOM</th>
+                    <th>RARETÉ</th>
+                    <th>CARTE</th>
+                </tr>
+            </thead>
+            <!-- Corps du tableau -->
+            <tbody id="maTable">
+                <tr>
+                    <td></td>
+                    <td>Abyss</td>
+                    <td class="ordinaire">Ordinaire</td>
+                    <td>
+                        <!-- Ici se trouve l'image de la carte et lorsque l'utilisateur clique dessus, elle s'ouvre en grand au milieu de la page -->
+                        <img src="../Images/Cartes/(ordinaire)Abyss.png" data-toggle="modal" data-target="#Abyss">
+                        <div class="modal fade" id="Abyss" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                        <img class="gdImage" src="../Images/Cartes/(ordinaire)Abyss.png">
+                        </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Adversaire</td>
+                    <td class="ordinaire">Ordinaire</td>
+                    <td>
+                        <!-- Ici se trouve l'image de la carte et lorsque l'utilisateur clique dessus, elle s'ouvre en grand au milieu de la page -->
+                        <img src="../Images/Cartes/(ordinaire)Adversaire.png" data-toggle="modal" data-target="#Adversaire">
+                        <div class="modal fade" id="Adversaire" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                        <img class="gdImage" src="../Images/Cartes/(ordinaire)Adversaire.png">
+                        </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Executioner</td>
+                    <td class="ordinaire">Ordinaire</td>
+                    <td>
+                        <!-- Ici se trouve l'image de la carte et lorsque l'utilisateur clique dessus, elle s'ouvre en grand au milieu de la page -->
+                        <img src="../Images/Cartes/(ordinaire)Executioner.png" data-toggle="modal" data-target="#Executioner">
+                        <div class="modal fade" id="Executioner" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                        <img class="gdImage" src="../Images/Cartes/(ordinaire)Executioner.png">
+                        </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Rage</td>
+                    <td class="ordinaire">Ordinaire</td>
+                    <td>
+                        <!-- Ici se trouve l'image de la carte et lorsque l'utilisateur clique dessus, elle s'ouvre en grand au milieu de la page -->
+                        <img src="../Images/Cartes/(ordinaire)Rage.png" data-toggle="modal" data-target="#Rage">
+                        <div class="modal fade" id="Rage" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                        <img class="gdImage" src="../Images/Cartes/(ordinaire)Rage.png">
+                        </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Abomination</td>
+                    <td class="rare">Rare</td>
+                    <td>
+                        <!-- Ici se trouve l'image de la carte et lorsque l'utilisateur clique dessus, elle s'ouvre en grand au milieu de la page -->
+                        <img src="../Images/Cartes/(rare)Abomination.png" data-toggle="modal" data-target="#Abomination">
+                        <div class="modal fade" id="Abomination" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                        <img class="gdImage" src="../Images/Cartes/(rare)Abomination.png">
+                        </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Absorbing Man</td>
+                    <td class="rare">Rare</td>
+                    <td>
+                        <!-- Ici se trouve l'image de la carte et lorsque l'utilisateur clique dessus, elle s'ouvre en grand au milieu de la page -->
+                        <img src="../Images/Cartes/(rare)Absorbing Man.png" data-toggle="modal" data-target="#AbsorbingMan">
+                        <div class="modal fade" id="AbsorbingMan" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                        <img class="gdImage" src="../Images/Cartes/(rare)Absorbing Man.png">
+                        </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Enchantress</td>
+                    <td class="rare">Rare</td>
+                    <td>
+                        <!-- Ici se trouve l'image de la carte et lorsque l'utilisateur clique dessus, elle s'ouvre en grand au milieu de la page -->
+                        <img src="../Images/Cartes/(rare)Enchantress.png" data-toggle="modal" data-target="#Enchantress">
+                        <div class="modal fade" id="Enchantress" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                        <img class="gdImage" src="../Images/Cartes/(rare)Enchantress.png">
+                        </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Hammerhead</td>
+                    <td class="rare">Rare</td>
+                    <td>
+                        <!-- Ici se trouve l'image de la carte et lorsque l'utilisateur clique dessus, elle s'ouvre en grand au milieu de la page -->
+                        <img src="../Images/Cartes/(rare)Hammerhead.png" data-toggle="modal" data-target="#Hammerhead">
+                        <div class="modal fade" id="Hammerhead" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                        <img class="gdImage" src="../Images/Cartes/(rare)Hammerhead.png">
+                        </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Machine Man</td>
+                    <td class="rare">Rare</td>
+                    <td>
+                        <!-- Ici se trouve l'image de la carte et lorsque l'utilisateur clique dessus, elle s'ouvre en grand au milieu de la page -->
+                        <img src="../Images/Cartes/(rare)Machine Man.png" data-toggle="modal" data-target="#MachineMan">
+                        <div class="modal fade" id="MachineMan" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                        <img class="gdImage" src="../Images/Cartes/(rare)Machine Man.png">
+                        </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Maximus</td>
+                    <td class="rare">Rare</td>
+                    <td>
+                        <!-- Ici se trouve l'image de la carte et lorsque l'utilisateur clique dessus, elle s'ouvre en grand au milieu de la page -->
+                        <img src="../Images/Cartes/(rare)Maximus.png" data-toggle="modal" data-target="#Maximus">
+                        <div class="modal fade" id="Maximus" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                        <img class="gdImage" src="../Images/Cartes/(rare)Maximus.png">
+                        </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Miss America</td>
+                    <td class="rare">Rare</td>
+                    <td>
+                        <!-- Ici se trouve l'image de la carte et lorsque l'utilisateur clique dessus, elle s'ouvre en grand au milieu de la page -->
+                        <img src="../Images/Cartes/(rare)Miss America.png" data-toggle="modal" data-target="#MissAmerica">
+                        <div class="modal fade" id="MissAmerica" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                        <img class="gdImage" src="../Images/Cartes/(rare)Miss America.png">
+                        </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Multiple Man</td>
+                    <td class="rare">Rare</td>
+                    <td>
+                        <!-- Ici se trouve l'image de la carte et lorsque l'utilisateur clique dessus, elle s'ouvre en grand au milieu de la page -->
+                        <img src="../Images/Cartes/(rare)Multiple Man.png" data-toggle="modal" data-target="#MultipleMan">
+                        <div class="modal fade" id="MultipleMan" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                        <img class="gdImage" src="../Images/Cartes/(rare)Multiple Man.png">
+                        </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Phantom Rider</td>
+                    <td class="rare">Rare</td>
+                    <td>
+                        <!-- Ici se trouve l'image de la carte et lorsque l'utilisateur clique dessus, elle s'ouvre en grand au milieu de la page -->
+                        <img src="../Images/Cartes/(rare)Phantom Rider.png" data-toggle="modal" data-target="#PhantomRider">
+                        <div class="modal fade" id="PhantomRider" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                        <img class="gdImage" src="../Images/Cartes/(rare)Phantom Rider.png">
+                        </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Ricochet</td>
+                    <td class="rare">Rare</td>
+                    <td>
+                        <!-- Ici se trouve l'image de la carte et lorsque l'utilisateur clique dessus, elle s'ouvre en grand au milieu de la page -->
+                        <img src="../Images/Cartes/(rare)Ricochet.png" data-toggle="modal" data-target="#Ricochet">
+                        <div class="modal fade" id="Ricochet" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                        <img class="gdImage" src="../Images/Cartes/(rare)Ricochet.png">
+                        </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Anti-Venom</td>
+                    <td class="epique">Epique</td>
+                    <td>
+                        <!-- Ici se trouve l'image de la carte et lorsque l'utilisateur clique dessus, elle s'ouvre en grand au milieu de la page -->
+                        <img src="../Images/Cartes/(epique)Anti-Venom.png" data-toggle="modal" data-target="#Anti_Venom">
+                        <div class="modal fade" id="Anti_Venom" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                        <img class="gdImage" src="../Images/Cartes/(epique)Anti-Venom.png">
+                        </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Emma Frost</td>
+                    <td class="epique">Epique</td>
+                    <!-- Ici se trouve l'image de la carte et lorsque l'utilisateur clique dessus, elle s'ouvre en grand au milieu de la page -->
+                    <td>
+                        <img src="../Images/Cartes/(epique)Emma Frost.png" data-toggle="modal" data-target="#EmmaFrost">
+                        <div class="modal fade" id="EmmaFrost" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                        <img class="gdImage" src="../Images/Cartes/(epique)Emma Frost.png">
+                        </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Ghost Rider</td>
+                    <td class="epique">Epique</td>
+                    <!-- Ici se trouve l'image de la carte et lorsque l'utilisateur clique dessus, elle s'ouvre en grand au milieu de la page -->
+                    <td>
+                        <img src="../Images/Cartes/(epique)Ghost Rider.png" data-toggle="modal" data-target="#GhostRider">
+                        <div class="modal fade" id="GhostRider" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                        <img class="gdImage" src="../Images/Cartes/(epique)Ghost Rider.png">
+                        </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Jonah Jameson</td>
+                    <td class="epique">Epique</td>
+                    <!-- Ici se trouve l'image de la carte et lorsque l'utilisateur clique dessus, elle s'ouvre en grand au milieu de la page -->
+                    <td>
+                        <img src="../Images/Cartes/(epique)Jonah Jameson.png" data-toggle="modal" data-target="#JonahJameson">
+                        <div class="modal fade" id="JonahJameson" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                        <img class="gdImage" src="../Images/Cartes/(epique)Jonah Jameson.png">
+                        </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Kingpin</td>
+                    <td class="epique">Epique</td>
+                    <!-- Ici se trouve l'image de la carte et lorsque l'utilisateur clique dessus, elle s'ouvre en grand au milieu de la page -->
+                    <td>
+                        <img src="../Images/Cartes/(epique)Kingpin.png" data-toggle="modal" data-target="#Kingpin">
+                        <div class="modal fade" id="Kingpin" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                        <img class="gdImage" src="../Images/Cartes/(epique)Kingpin.png">
+                        </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Mephisto</td>
+                    <td class="epique">Epique</td>
+                    <!-- Ici se trouve l'image de la carte et lorsque l'utilisateur clique dessus, elle s'ouvre en grand au milieu de la page -->
+                    <td>
+                        <img src="../Images/Cartes/(epique)Mephisto.png" data-toggle="modal" data-target="#Mephisto">
+                        <div class="modal fade" id="Mephisto" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                        <img class="gdImage" src="../Images/Cartes/(epique)Mephisto.png">
+                        </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Quicksilver</td>
+                    <td class="epique">Epique</td>
+                    <!-- Ici se trouve l'image de la carte et lorsque l'utilisateur clique dessus, elle s'ouvre en grand au milieu de la page -->
+                    <td>
+                        <img src="../Images/Cartes/(epique)Quicksilver.png" data-toggle="modal" data-target="#Quicksilver">
+                        <div class="modal fade" id="Quicksilver" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                        <img class="gdImage" src="../Images/Cartes/(epique)Quicksilver.png">
+                        </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Sandman</td>
+                    <td class="epique">Epique</td>
+                    <!-- Ici se trouve l'image de la carte et lorsque l'utilisateur clique dessus, elle s'ouvre en grand au milieu de la page -->
+                    <td>
+                        <img src="../Images/Cartes/(epique)Sandman.png" data-toggle="modal" data-target="#Sandman">
+                        <div class="modal fade" id="Sandman" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                        <img class="gdImage" src="../Images/Cartes/(epique)Sandman.png">
+                        </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Gamora</td>
+                    <td class="legendaire">Légendaire</td>
+                    <!-- Ici se trouve l'image de la carte et lorsque l'utilisateur clique dessus, elle s'ouvre en grand au milieu de la page -->
+                    <td>
+                        <img src="../Images/Cartes/(legendaire)Gamora.png" data-toggle="modal" data-target="#Gamora">
+                        <div class="modal fade" id="Gamora" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                        <img class="gdImage" src="../Images/Cartes/(legendaire)Gamora.png">
+                        </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Loki</td>
+                    <td class="legendaire">Légendaire</td>
+                    <!-- Ici se trouve l'image de la carte et lorsque l'utilisateur clique dessus, elle s'ouvre en grand au milieu de la page -->
+                    <td>
+                        <img src="../Images/Cartes/(legendaire)Loki.png" data-toggle="modal" data-target="#Loki">
+                        <div class="modal fade" id="Loki" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                        <img class="gdImage" src="../Images/Cartes/(legendaire)Loki.png">
+                        </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Luke Cage</td>
+                    <td class="legendaire">Légendaire</td>
+                    <!-- Ici se trouve l'image de la carte et lorsque l'utilisateur clique dessus, elle s'ouvre en grand au milieu de la page -->
+                    <td>
+                        <img src="../Images/Cartes/(legendaire)Luke Cage.png" data-toggle="modal" data-target="#LukeCage">
+                        <div class="modal fade" id="LukeCage" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                        <img class="gdImage" src="../Images/Cartes/(legendaire)Luke Cage.png">
+                        </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Mister Fantastic</td>
+                    <td class="legendaire">Légendaire</td>
+                    <!-- Ici se trouve l'image de la carte et lorsque l'utilisateur clique dessus, elle s'ouvre en grand au milieu de la page -->
+                    <td>
+                        <img src="../Images/Cartes/(legendaire)Mister Fantastic.png" data-toggle="modal" data-target="#MisterFantastic">
+                        <div class="modal fade" id="MisterFantastic" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                        <img class="gdImage" src="../Images/Cartes/(legendaire)Mister Fantastic.png">
+                        </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Ant-Man</td>
+                    <td class="hero">Héro</td>
+                    <!-- Ici se trouve l'image de la carte et lorsque l'utilisateur clique dessus, elle s'ouvre en grand au milieu de la page -->
+                    <td>
+                        <img src="../Images/Cartes/(hero)Ant-Man.png" data-toggle="modal" data-target="#Ant_Man">
+                        <div class="modal fade" id="Ant_Man" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                        <img class="gdImage" src="../Images/Cartes/(hero)Ant-Man.png">
+                        </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Black Panther</td>
+                    <td class="hero">Hero</td>
+                    <!-- Ici se trouve l'image de la carte et lorsque l'utilisateur clique dessus, elle s'ouvre en grand au milieu de la page -->
+                    <td>
+                        <img src="../Images/Cartes/(hero)Black Panther.png" data-toggle="modal" data-target="#BlackPanther">
+                        <div class="modal fade" id="BlackPanther" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                        <img class="gdImage" src="../Images/Cartes/(hero)Black Panther.png">
+                        </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Black Widow</td>
+                    <td class="hero">Hero</td>
+                    <!-- Ici se trouve l'image de la carte et lorsque l'utilisateur clique dessus, elle s'ouvre en grand au milieu de la page -->
+                    <td>
+                        <img src="../Images/Cartes/(hero)Black Widow.png" data-toggle="modal" data-target="#BlackWidow">
+                        <div class="modal fade" id="BlackWidow" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                        <img class="gdImage" src="../Images/Cartes/(hero)Black Widow.png">
+                        </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Captain America</td>
+                    <td class="hero">Hero</td>
+                    <!-- Ici se trouve l'image de la carte et lorsque l'utilisateur clique dessus, elle s'ouvre en grand au milieu de la page -->
+                    <td>
+                        <img src="../Images/Cartes/(hero)Captain America.png" data-toggle="modal" data-target="#CaptainAmerica">
+                        <div class="modal fade" id="CaptainAmerica" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                        <img class="gdImage" src="../Images/Cartes/(hero)Captain America.png">
+                        </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Captain Marvel</td>
+                    <td class="hero">Hero</td>
+                    <!-- Ici se trouve l'image de la carte et lorsque l'utilisateur clique dessus, elle s'ouvre en grand au milieu de la page -->
+                    <td>
+                        <img src="../Images/Cartes/(hero)Captain Marvel.png" data-toggle="modal" data-target="#CaptainMarvel">
+                        <div class="modal fade" id="CaptainMarvel" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                        <img class="gdImage" src="../Images/Cartes/(hero)Captain Marvel.png">
+                        </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Deadpool</td>
+                    <td class="hero">Hero</td>
+                    <!-- Ici se trouve l'image de la carte et lorsque l'utilisateur clique dessus, elle s'ouvre en grand au milieu de la page -->
+                    <td>
+                        <img src="../Images/Cartes/(hero)Deadpool.png" data-toggle="modal" data-target="#Deadpool">
+                        <div class="modal fade" id="Deadpool" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                        <img class="gdImage" src="../Images/Cartes/(hero)Deadpool.png">
+                        </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Doctor Strange</td>
+                    <td class="hero">Hero</td>
+                    <!-- Ici se trouve l'image de la carte et lorsque l'utilisateur clique dessus, elle s'ouvre en grand au milieu de la page -->
+                    <td>
+                        <img src="../Images/Cartes/(hero)Doctor Strange.png" data-toggle="modal" data-target="#DoctorStrange">
+                        <div class="modal fade" id="DoctorStrange" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                        <img class="gdImage" src="../Images/Cartes/(hero)Doctor Strange.png">
+                        </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Hulk</td>
+                    <td class="hero">Hero</td>
+                    <!-- Ici se trouve l'image de la carte et lorsque l'utilisateur clique dessus, elle s'ouvre en grand au milieu de la page -->
+                    <td>
+                        <img src="../Images/Cartes/(hero)Hulk.png" data-toggle="modal" data-target="#Hulk">
+                        <div class="modal fade" id="Hulk" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                        <img class="gdImage" src="../Images/Cartes/(hero)Hulk.png">
+                        </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Iron Man</td>
+                    <td class="hero">Hero</td>
+                    <!-- Ici se trouve l'image de la carte et lorsque l'utilisateur clique dessus, elle s'ouvre en grand au milieu de la page -->
+                    <td>
+                        <img src="../Images/Cartes/(hero)Iron Man.png" data-toggle="modal" data-target="#IronMan">
+                        <div class="modal fade" id="IronMan" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                        <img class="gdImage" src="../Images/Cartes/(hero)Iron Man.png">
+                        </div>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- Insertion de mon javascript -->
+        <script src="../Javascript/repertoire.js"></script>
+        <!-- Insertion de Bootstrap -->
+        <script src="../Bootstrap/js/popper.min.js"></script>
+        <script src="../Bootstrap/js/bootstrap.min.js"></script>
+    </body>
+</html>

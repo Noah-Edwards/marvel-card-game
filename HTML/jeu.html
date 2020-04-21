@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" charset="UTF-8">
+		<title>Jeu de Cartes MARVEL</title>
+		<link rel="shortcut icon" type="image/png" href="../Images/Autres/Marvel.png">
+
+		<!-- Lien vers le css de la page -->
+		<link rel="stylesheet" href="../CSS/jeu.css">
+		<!-- Lien vers FontAwesome pour les icônes -->
+		<link rel="stylesheet" href="../Icônes FontAwesome/css/all.css">
+	</head>
+	<body>
+		<div class="menuToggle">
+			Menu <i class="fa fa-bars" aria-hidden="true"></i>
+		</div>
+		<ul>
+			<li>
+				<a href="../index.html">
+					<div class="icon">
+						<i class="fa fa-home" aria-hidden="true"></i>
+						<i class="fa fa-home" aria-hidden="true"></i>
+					</div>
+					<div class="name" data-text="Home">Menu</div>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<div class="icon">
+						<i class="fa fa-cogs" aria-hidden="true"></i>
+						<i class="fa fa-cogs" aria-hidden="true"></i>
+					</div>
+					<div class="name" data-text="Services">Services</div>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<div class="icon">
+						<i class="fa fa-image" aria-hidden="true"></i>
+						<i class="fa fa-image" aria-hidden="true"></i>
+					</div>
+					<div class="name" data-text="Portfolio">Portfolio</div>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<div class="icon">
+						<i class="fa fa-users" aria-hidden="true"></i>
+						<i class="fa fa-users" aria-hidden="true"></i>
+					</div>
+					<div class="name" data-text="Team">Team</div>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<div class="icon">
+						<i class="fa fa-envelope" aria-hidden="true"></i>
+						<i class="fa fa-envelope" aria-hidden="true"></i>
+					</div>
+					<div class="name" data-text="Contact">Contact</div>
+				</a>
+			</li>
+		</ul>
+		<div id="tableJeu">
+			<div id="coteJoueur1">
+				<h2>Joueur 1</h2>
+				<button id="VitesseJ1" class="J1"><span id="VitesseCarteJ1"></span></button>
+				<button id="ForceJ1" class="J1"><span id="ForceCarteJ1"></span></button>
+				<button id="CharismeJ1" class="J1"><span id="CharismeCarteJ1"></span></button>
+				<button id="RésistanceJ1" class="J1"><span id="RésistanceCarteJ1"></span></button>
+				<button id="MentalJ1" class="J1"><span id="MentalCarteJ1"></span></button>
+				<button id="GénéralJ1" class="J1"><span id="GénéralCarteJ1"></span></button>
+				<button id="TailleJ1" class="J1"><span id="TailleCarteJ1"></span></button>
+				<button id="PoidsJ1" class="J1"><span id="PoidsCarteJ1"></span></button>
+				<button id="ApparitionJ1" class="J1"><span id="ApparitionCarteJ1"></span></button>
+				<button id="ConfirmerJ1" class="active"><span>Confirmer</span></button>
+			</div>
+			<div id="plateauJeu">
+				<h1><font color="#ED1C23">MARVEL</font> Card Game</h1>
+				<div id="confrontation">
+					<img src="../Images/Autres/DOS.png" id="ImageJ1">
+					<img src="../Images/Autres/Versus.png" id="imageVersus">
+					<img src="../Images/Autres/DOS.png" id="ImageJ2">
+				</div>
+				<div id="cartesRestantes">
+					<div id="cartesRestantesJ1"><span id="nbCartesRestantesJ1">17</span><img id="cards-icon" src="../Images/Autres/cards-icon.png"></div>
+					<div id="cartesRestantesJ2"><span id="nbCartesRestantesJ2">17</span><img id="cards-icon" src="../Images/Autres/cards-icon.png"></div>
+				</div>
+			</div>
+			<div id="coteJoueur2">
+				<h2>Joueur 2</h2>
+				<button id="VitesseJ2" class="J2"><span id="VitesseCarteJ2"></span></button></button>
+				<button id="ForceJ2" class="J2"><span id="ForceCarteJ2"></span></button>
+				<button id="CharismeJ2" class="J2"><span id="CharismeCarteJ2"></span></button>
+				<button id="RésistanceJ2" class="J2"><span id="RésistanceCarteJ2"></span></button>
+				<button id="MentalJ2" class="J2"><span id="MentalCarteJ2"></span></button>
+				<button id="GénéralJ2" class="J2"><span id="GénéralCarteJ2"></span></button>
+				<button id="TailleJ2" class="J2"><span id="TailleCarteJ2"></span></button>
+				<button id="PoidsJ2" class="J2"><span id="PoidsCarteJ2"></span></button>
+				<button id="ApparitionJ2" class="J2"><span id="ApparitionCarteJ2"></span></button>
+				<button id="ConfirmerJ2" class="active"><span>Confirmer</span></button>
+			</div>
+		</div>
+		<div class="modal-background-turn-screen">
+			<div class="modal-content-turn-screen">
+				<h2>Veuillez tourner votre écran</h2>
+			</div>
+		</div>
+		<div class="modal-background-begin">
+			<div class="modal-content-begin">
+				<h2>Qui va jouer le premier ?</h2>
+				<div id="modalButtons">
+					<button id="modalButtonJ1"><span>Joueur 1</span></button>
+					<button id="modalButtonJ2"><span>Joueur 2</span></button>
+				</div>
+			</div>
+		</div>
+		<div class="modal-background-game">
+			<div class="modal-content-game">
+				<h2>Le gagnant est le joueur <span id="gagnantManche"></span> !</h2>
+				<div id="modalImages">
+					<img id="ImageJ1Modal" src="../Images/Autres/DOS.png">
+					<img id="ImageJ2Modal" src="../Images/Autres/DOS.png">
+				</div>
+				<div class="JModal">
+					<p id="modal-game-J1"></p>
+					<p id="modal-game-Capacity"></p>
+					<p id="modal-game-J2"></p>
+				</div>
+				<div id="modalButtons">
+					<button id="modalButtonGame" class="active"><span>OK</span></button>
+				</div>
+			</div>
+		</div>
+		<div class="modal-background-end">
+			<div class="modal-content-end">
+				<h2>Le gagnant est le joueur <span id="gagnantPartie"></span> !</h2>
+				<div id="modalButtons">
+					<button id="modalButtonMenu"><span>MENU</span></button>
+				</div>
+			</div>
+		</div>
+
+		<!-- Lien vers JQuery -->
+		<script type="text/javascript" src="../JQuery/jquery-3.4.1.min.js"></script>
+		<!-- Lien vers mon javascript personnel -->
+		<script type="text/javascript" src="../Javascript/jeu.js"></script>
+	</body>
+</html>

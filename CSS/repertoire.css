@@ -1,0 +1,153 @@
+body {
+    background: linear-gradient(#990033 0%, #000066 100%);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.searchBox {
+    position: absolute;
+    top : 1%;
+    left: 50%;
+    transform:  translate(-50%,50%);
+    background: #2f3640;
+    height: 60px;
+    border-radius: 40px;
+}
+
+.searchBox:hover > .searchInput {
+    width: 450px;
+    padding: 0 6px;
+}
+
+.searchBox:hover > .searchButton {
+  background: white;
+  color : #2f3640;
+}
+
+.searchButton {
+    color: white;
+    float: right;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: #2f3640;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+}
+
+.searchInput {
+    border:none;
+    background: none;
+    outline:none;
+    float:left;
+    padding: 0;
+    color: white;
+    font-size: 20px;
+    transition: 0.4s;
+    line-height: 60px;
+    width: 0px;
+}
+
+@media screen and (max-width: 620px) {
+    .searchBox:hover > .searchInput {
+        width: 150px;
+        padding: 0 6px;
+    }
+}
+
+table {
+    font-family: 'Comic Sans MS', sans-serif;
+    border-collapse: collapse;
+    min-width: 75%;
+    max-width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 2em;
+    font-weight: bold;
+    box-shadow: 20px 20px 20px;
+    margin-bottom: 5%;
+    margin-top: 8%;
+    counter-reset: row-num;
+    background-color: white;
+}
+
+thead tr{
+    text-align: center;
+    color : #ffffff;
+    background-color: #E23636;
+}
+
+td, th {
+    padding: 12px 15px;
+}
+
+#maTable tr{
+    border-bottom: 1px solid #dddddd;
+    text-align: center;
+    counter-increment: row-num;
+}
+
+#maTable tr:nth-of-type(even){
+    background-color: #f3f3f3;
+}
+
+#maTable tr:last-of-type {
+    border-bottom: 4px solid #E23636;
+}
+
+.hero{
+    color : transparent;
+    text-transform: uppercase;
+    background-image: linear-gradient(to right, #f00, #ff0, #0ff, #ff0, #f00);
+    -webkit-background-clip: text;
+    animation : animateCard 5s linear infinite;
+    background-size: 1000%;
+}
+
+.legendaire{
+    color : transparent;
+    background-image: linear-gradient(to right, #0ff, #ff0, violet);
+    -webkit-background-clip: text;
+}
+
+.epique{
+    color : violet;
+}
+
+.rare{
+    color : green;
+}
+
+.ordinaire{
+    color : grey;
+}
+
+img{
+    width: 25%;
+    height : auto;
+    cursor : pointer;
+}
+
+.gdImage{
+    width : 100%;
+    height : auto;
+}
+
+.modal{
+    cursor : pointer;
+}
+
+#maTable tr td:first-child::before {
+    content: counter(row-num);
+}
+
+@keyframes animateCard {
+    0%{
+        background-position: 0% 100%;
+    }
+    100%{
+        background-position: 100% 0%;
+    }
+}

@@ -1,0 +1,371 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800,900&display=swap');
+
+html, body{
+	margin : 0;
+	padding : 0;
+	font-family: 'Poppins', sans-serif;
+	background-color: black;
+}
+
+ul{
+	margin : 0;
+	background-color: #fff;
+	border-radius: 10px;
+	box-shadow: 0px 10px 30px rgba(0,0,0,0.3);
+	z-index: 99;
+	position: fixed;
+	top : 15%;
+	left: 50%;
+	padding: 0;
+	width : 90%;
+	display : block;
+	overflow: hidden;
+	transition: 1s;
+	transform: translate(-50%) scaleY(0);
+	transform-origin: top;
+}
+
+ul.active{
+	transform: translate(-50%) scaleY(1);
+}
+
+ul li{
+	list-style: none;
+	text-align: center;
+	border-bottom: 1px solid rgba(0,0,0,0.2);
+	padding : 10px 0px;
+	display : flex;
+}
+
+ul li:last-child{
+	border-bottom: none;
+}
+
+ul li a{
+	text-decoration: none;
+	display : block;
+	padding : 0px 20px;
+}
+
+ul li a .icon{
+	width : 45px;
+	height : 45px;
+	text-align: center;
+	overflow: hidden;
+	display: inline-block;
+	float: left;
+	margin: 0px auto;
+}
+
+ul li a .icon .fa{
+	width : 100%;
+	height : 100%;
+	line-height: 45px;
+	font-size: 34px;
+	transition: 0.5s;
+	color : #000;
+}
+
+ul li a .icon .fa:last-child{
+	color : red;
+}
+
+ul li a:hover .icon .fa{
+	transform : translateY(-100%);
+}
+
+ul li a .name{
+	position: relative;
+	height : 20px;
+	overflow: hidden;
+	color : black;
+	font-size: 18px;
+	width : auto;
+	display: inline-block;
+	margin-top : 5px;
+	padding: 10px;
+}
+
+ul li a:hover .name{
+	color : red;
+}
+
+.menuToggle{
+	position: fixed;
+	top : 30px;
+	left : 45%;
+	background-color: #AD151A;
+	color : white;
+	padding: 10px;
+	font-size: 2vw;
+	border-radius: 4px;
+	cursor: pointer;
+	display: block;
+	z-index: 2;
+}
+
+.modal-background-turn-screen{
+	width : 100%;
+	height : 100%;
+	background-color: rgba(0,0,0,0.9);
+	display: none;
+	position: absolute;
+	top: 0;
+	justify-content: center;
+	align-items: center;
+	z-index: 99;
+}
+
+@media only screen and (orientation:portrait){
+	.modal-background-turn-screen{
+		display: flex;
+	}
+}
+
+.modal-background-begin{
+	width : 100%;
+	height : 100%;
+	background-color: rgba(0,0,0,0.7);
+	display: flex;
+	position: absolute;
+	top: 0;
+	justify-content: center;
+	align-items: center;
+	z-index: 3;
+}
+
+.modal-content-begin{
+	width : 30%;
+	height : 30%;
+	padding : 20px;
+	background-color: #AD151A;
+	border-radius: 10px;
+	z-index: 3;
+}
+
+.modal-background-game{
+	width : 100%;
+	height : 100%;
+	background-color: rgba(0,0,0,0.9);
+	display: none;
+	position: absolute;
+	top: 0;
+	justify-content: center;
+	align-items: center;
+	z-index: 3;
+}
+
+.modal-content-game{
+	width : 30%;
+	height : auto;
+	padding : 20px;
+	z-index: 3;
+}
+
+#modalImages{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.JModal{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	color : white;
+	font-size : 2vw;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+#ImageJ1Modal, #ImageJ2Modal{
+	width: 60%;
+	height: auto;
+	transition : 2s;
+}
+
+#modalButtons{
+	margin-bottom: 30px;
+}
+
+#modalButtonJ1, #modalButtonJ2{
+	margin-bottom: 20px;
+}
+
+.modal-background-end{
+	width : 100%;
+	height : 100%;
+	background-color: rgba(0,0,0,0.7);
+	display: none;
+	position: absolute;
+	top: 0;
+	justify-content: center;
+	align-items: center;
+	z-index: 3;
+}
+
+.modal-content-end{
+	width : 30%;
+	height : 30%;
+	padding : 20px;
+	background-color: #AD151A;
+	border-radius: 10px;
+	z-index: 3;
+}
+
+#ImageJ1, #ImageJ2{
+	width : 40%;
+	height : auto;
+	transition: 2s;
+}
+
+#imageVersus{
+	margin-top: 25%;
+	width : 10%;
+	height : 10%;
+}
+
+#cards-icon{
+	width : 10%;
+	height : auto;
+}
+
+h1{
+	font-size: 3vw;
+	text-align: center;
+}
+
+h2{
+	font-size: 2vw;
+	text-align: center;
+	margin-top: 2%;
+	color : white;
+}
+
+button{
+	position: relative;
+	top : -5%;
+	left : 15%;
+	width : 70%;
+	background-color: transparent;
+	border : 2px solid white;
+	color : white;
+	font-size : 1.2vw;
+	font-weight: bold;
+	cursor : pointer;
+}
+
+button:focus{
+	outline: none;
+}
+
+button.active{
+	background-color: white;
+	color : #ED1C23;
+	border : 2px solid #333;
+}
+
+button::before{
+	content: '';
+	position: absolute;
+	top: 6px;
+	left: -2px;
+	width: calc(100% + 4px);
+	height : calc(100% - 12px);
+	background-color: #AD151A;
+	transition: 0.4s ease-in-out;
+	transform: scaleY(1);
+}
+
+button.active::before{
+	transform : scaleY(0);
+}
+
+button::after{
+	content: '';
+	position: absolute;
+	left: 6px;
+	top: -2px;
+	height: calc(100% + 4px);
+	width : calc(100% - 12px);
+	background-color: #AD151A;
+	transition: 0.4s ease-in-out;
+	transform: scaleX(1);
+}
+
+button.active::after{
+	transform : scaleX(0);
+}
+
+button span{
+	position: relative;
+	z-index: 1;
+}
+
+#tableJeu{
+	background-color: #333;
+	width : 95%;
+	height : 90vh;
+	margin-left : auto;
+	margin-right: auto;
+	margin-top: 5vh;
+	display: flex;
+	justify-content: space-around;
+	z-index: 1;
+}
+
+#coteJoueur1{
+	position: relative;
+	top : 5%;
+	width : 20%;
+	height : 90%;
+	background-color: #AD151A;
+	color : black;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    z-index: 1;
+}
+
+#plateauJeu{
+	position : relative;
+	top : 5%;
+	width : 50%;
+	height : 90%;
+	background-color: #BFBFBF;
+	z-index: 1;
+}
+
+#confrontation{
+	display: flex;
+	justify-content: space-around;
+	z-index: 1;
+}
+
+#cartesRestantes{
+	margin-top: 5%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	font-size: 5vh;
+	font-weight: bold;
+}
+
+#cartesRestantesJ1, #cartesRestantesJ2{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#coteJoueur2{
+	position: relative;
+	top : 5%;
+	width : 20%;
+	height : 90%;
+	background-color: #AD151A;
+	color : black;
+	display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    z-index: 1;
+}

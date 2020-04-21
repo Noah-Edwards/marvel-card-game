@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800,900&display=swap');
+
+html, body{
+	margin : 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+
+.preloader{
+	position: fixed;
+	top : 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height : 100vh;
+	background-color: black;
+	cursor : pointer;
+	z-index: 99;
+}
+
+.preloader h1{
+	margin-bottom: 0;
+	font-size : 10em;
+	font-weight: 900;
+	text-transform: uppercase;
+	color : white;
+}
+
+.preloader h3{
+	margin-top: 0;
+	font-size: 3em;
+	font-weight: 900;
+	color : rgba(255,255,255,0.5);
+	animation : blink 2.5s ease-in-out infinite;
+}
+
+@keyframes blink{
+	0%{ opacity : 1;}
+	50%{ opacity : 0.3;}
+	100%{ opacity : 1;}
+}
+
+.preloader.active{
+	transform : translateY(-100vh);
+	transition : ease-in-out 1s;
+}
+
+ul{
+	position: fixed;
+	top : 2%;
+	left: 50%;
+	transform : translate(-50%);
+	margin : 0;
+	padding : 20px;
+	background-color: #fff;
+	display : flex;
+	border-radius: 10px;
+	box-shadow: 0px 10px 30px rgba(0,0,0,0.3);
+	z-index: 90;
+}
+
+ul li{
+	list-style: none;
+	text-align: center;
+	display : block;
+	border-right: 1px solid rgba(0,0,0,0.2);
+}
+
+ul li:last-child{
+	border-right: none;
+}
+
+ul li a{
+	text-decoration: none;
+	padding : 0px 50px;
+	display : block;
+}
+
+ul li a .icon{
+	width : 45px;
+	height : 45px;
+	text-align: center;
+	overflow: hidden;
+	margin: 0px auto 10px;
+}
+
+ul li a .icon .fa{
+	width : 100%;
+	height : 100%;
+	line-height: 45px;
+	font-size: 34px;
+	transition: 0.5s;
+	color : #000;
+}
+
+ul li a .icon .fa:last-child{
+	color : red;
+}
+
+ul li a:hover .icon .fa{
+	transform : translateY(-100%);
+}
+
+ul li a .name{
+	position: relative;
+	height : 20px;
+	width : auto;
+	display: inline-block;
+	overflow: hidden;
+	color : black;
+	font-size: 18px;
+}
+
+ul li a:hover .name{
+	color : red;
+}
+
+.menuToggle{
+	position: fixed;
+	top : 30px;
+	right : 30px;
+	background-color: #fff;
+	padding: 20px;
+	font-size: 34px;
+	border-radius: 4px;
+	cursor: pointer;
+	display: none;
+}
+
+@media (max-width: 992px){
+	.menuToggle{
+		display: block;
+	}
+
+	ul{
+		position: fixed;
+		top : 18%;
+		left: 50%;
+		padding: 0;
+		width : 90%;
+		display : block;
+		overflow: hidden;
+		transition: 0.5s;
+		transform: translate(-50%) scaleY(0);
+		transform-origin: top;
+	}
+
+	ul.active{
+		transform: translate(-50%) scaleY(1);
+	}
+
+	ul li{
+		border-bottom: 1px solid rgba(0,0,0,0.2);
+		padding : 10px 0px;
+		display : flex;
+	}
+
+	ul li:last-child{
+		border-bottom: none;
+	}
+
+	ul li a{
+		padding : 0px 20px;
+	}
+
+	ul li a .icon{
+		display: inline-block;
+		float: left;
+		margin: 0px auto;
+	}
+
+	ul li a .name{
+		width : auto;
+		display: inline-block;
+		margin-top : 5px;
+		padding: 10px;
+	}
+}
+
+section{
+	padding-top : 5px;
+	padding-left : 50px;
+	padding-right : 50px;
+	background-color: #333;
+	color : #fff;
+	height : 100vh;
+	display : flex;
+	justify-content: center;
+	align-items: center;
+	font-family: consolas;
+}
+
+.card-container{
+	width : 60%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.card-container .card{
+	position: relative;
+}
+
+.card-container .card .face{
+	width : 300px;
+	height: 300px;
+	transition: 0.5s;
+}
+
+.card-container .card .face.face1{
+	position: relative;
+	background-color: #333;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 1;
+	transform: translateY(150px);
+}
+
+.card-container .card:hover .face.face1{
+	background-color: red;
+	transform: translateY(0);
+}
+
+.card-container .card .face.face1 .content{
+	opacity: 0.5;
+	transition: 0.5s;
+}
+
+.card-container .card:hover .face.face1 .content{
+	opacity: 1;
+}
+
+.card-container .card .face.face1 .content img{
+	max-width: 120px;
+}
+
+.card-container .card .face.face1 .content i{
+	color: #fff;
+	font-size: 10em;
+}
+
+.card-container .card .face.face1 .content h3{
+	padding : 0px;
+	color : #fff;
+	text-align: center;
+	font-size: 1.5em;
+}
+
+.card-container .card .face.face2{
+	position: relative;
+	background-color: #fff;
+	color : black;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 20px;
+	box-sizing: border-box;
+	box-shadow: 0px 20px 50px rgba(0,0,0,0.8);
+	transform: translateY(-150px);
+}
+
+.card-container .card:hover .face.face2{
+	transform: translateY(0);
+}
+
+.card-container .card .face.face2 .content p{
+	padding: 0;
+	margin : 0;
+}
+
+.card-container .card .face.face2 .content a{
+	margin : 15px 0px 0px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-transform: uppercase;
+	text-decoration : none;
+	font-weight: 900;
+	color : #333;
+	font-size: 1.5em;
+	padding : 10px;
+	border : 1px solid #333;
+	transition: 0.5s;
+}
+
+.card-container .card .face.face2 .content a:hover{
+	background-color: #333;
+	color : #fff;
+}
